@@ -1,0 +1,165 @@
+td.details-control {
+    background: url('../img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../img/details_close.png') no-repeat center center;
+}
+
+.process {
+    position: relative;
+}
+
+.process:before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    animation: 0.8s linear infinite rotate;
+}
+.process.loading {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.process.loading:before {
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.select2-container .select2-selection--single {
+    height: 38px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 38px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 38px;
+}
+
+.mail-left{
+    width:280px !important;
+    padding:15px;
+    border-right:1px solid #eaeaea;
+    display:block
+}
+
+.mail-inbox .mail-right{
+    width:calc(100% - 280px) !important;
+    position:relative
+}
+
+.treeview-wrap {
+    width: 240px; 
+    overflow: auto;
+}
+
+/**
+ * ==============================================
+ * Dot Falling
+ * ==============================================
+ */
+/*.dot-falling {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 9999px 0 0 0 #ffffff;
+    animation: dotFalling 1s infinite linear;
+    animation-delay: 0.1s;
+}
+
+.dot-falling::before,
+.dot-falling::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-falling::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #ffffff;
+    animation: dotFallingBefore 1s infinite linear;
+    animation-delay: 0s;
+}
+
+.dot-falling::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #ffffff;
+    animation: dotFallingAfter 1s infinite linear;
+    animation-delay: 0.2s;
+}
+
+@keyframes dotFalling {
+    0% {
+        box-shadow: 9999px -15px 0 0 rgba(255, 255, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+        box-shadow: 9999px 0 0 0 #ffffff;
+    }
+    100% {
+        box-shadow: 9999px 15px 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes dotFallingBefore {
+    0% {
+        box-shadow: 9984px -15px 0 0 rgba(255, 255, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+        box-shadow: 9984px 0 0 0 #ffffff;
+    }
+    100% {
+        box-shadow: 9984px 15px 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes dotFallingAfter {
+    0% {
+        box-shadow: 10014px -15px 0 0 rgba(255, 255, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+        box-shadow: 10014px 0 0 0 #ffffff;
+    }
+    100% {
+        box-shadow: 10014px 15px 0 0 rgba(255, 255, 255, 0);
+    }
+}*/

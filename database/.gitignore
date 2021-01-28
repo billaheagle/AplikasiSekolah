@@ -1,0 +1,10 @@
+*.sqlite
+*.sqlite-journal
+/seeds/menus
+/seeds/permissions
+/seeds/role_has_permissions
+/seeds/ref_area
+/seeds/ref_directorate
+/seeds/ref_region
+/seeds/ref_unit
+/seeds/ref_employee
